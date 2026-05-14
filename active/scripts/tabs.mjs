@@ -51,7 +51,7 @@ pageRefresh.onclick = () => {
 };
 
 newTabButton.onclick = () => {
-  addTab("uvsearch.rhw.one");
+  addTab("https://stirring-horse-7f69ef.netlify.app");
 };
 
 // Options (opt menu)
@@ -75,7 +75,7 @@ abcOption.onclick = () => {
 };
 
 gitOption.onclick = () => {
-  window.open("https://github.com/rhenryw/UV-Static-2.0", "_blank");
+  window.open("https://github.com/KA1121Studio/UV-Static-2.0", "_blank");
 };
 
 urlForm.onsubmit = async (e) => {
@@ -133,7 +133,7 @@ const tabItem = (tab) => {
             if (tabs.length) focusTab(tabs[tabs.length - 1]);
             else
               setTimeout(() => {
-                addTab("uvsearch.rhw.one");
+                addTab("https://stirring-horse-7f69ef.netlify.app");
               }, 100);
           }
 
@@ -248,7 +248,7 @@ async function addTab(link) {
   focusTab(tab);
 }
 
-addTab("uvsearch.rhw.one");
+addTab("https://stirring-horse-7f69ef.netlify.app");
 
 const urlParams = new URLSearchParams(window.location.search);
 
