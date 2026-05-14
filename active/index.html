@@ -23,7 +23,8 @@ Developed by technonyte0
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UV Static v2</title>
+    <title>ホーム</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/19/Google_Classroom_Logo.svg">
     <script src="check.js" defer></script>
     <script defer src="scripts/lstimer.js"></script>
 
@@ -56,7 +57,7 @@ Developed by technonyte0
     <script>
       window.onload = function () {
         if (!localStorage.getItem("discordAlertShown")) {
-          alert("Join our discord.gg/XygZfmMM86 for bonuses, updates, links, and more!");
+          alert("ボーナス・更新・リンクなどの情報は discord.gg/XygZfmMM86 に参加してください");
           localStorage.setItem("discordAlertShown", "true");
         }
       };
@@ -65,7 +66,7 @@ Developed by technonyte0
 
   <body>
     <div id="small-screen-overlay">
-      UV Static 2.0 doesn't support smaller screens. Please use UV Static 2.0 on a larger screen.
+     
     </div>
 
 
@@ -108,7 +109,7 @@ Developed by technonyte0
 
            
 
-              <p class="tooltip">Home</p>
+              <p class="tooltip">ホーム</p>
             </button>
             <!-- <p class="logo-name">RED Browse</p> -->
             <span>
@@ -117,28 +118,28 @@ Developed by technonyte0
                   name="arrow-back-outline"
                   class="icon hover-focus1"
                 ></ion-icon>
-                <p class="tooltip">Back</p>
+                <p class="tooltip">戻る</p>
               </button>
               <button id="page-forward">
                 <ion-icon
                   name="arrow-forward-outline"
                   class="icon hover-focus1"
                 ></ion-icon>
-                <p class="tooltip">Forward</p>
+                <p class="tooltip">進む</p>
               </button>
               <button id="page-refresh">
                 <ion-icon
                   name="refresh-outline"
                   class="icon hover-focus1"
                 ></ion-icon>
-                <p class="tooltip">Refresh</p>
+                <p class="tooltip">更新</p>
               </button>
               <button id="options-btn">
                 <ion-icon
                   name="menu-outline"
                   class="icon hover-focus1"
                 ></ion-icon>
-                <p class="tooltip">Menu</p>
+                <p class="tooltip">メニュー</p>
               </button>
             </span>
           </span>
@@ -148,7 +149,7 @@ Developed by technonyte0
               id="url-input"
               onfocus="this.setSelectionRange(0, this.value.length)"
               class="hover-focus2"
-              placeholder="Search or enter URL"
+              placeholder="検索またはURLを入力"
               autocomplete="off"
               autocorrect="off"
               spellcheck="false"
@@ -156,7 +157,7 @@ Developed by technonyte0
           </form>
           <button id="new-tab" class="hover-focus2">
             <ion-icon name="add-outline" class="icon"></ion-icon>
-            <span>New Tab</span>
+            <span>新しいタブ</span>
           </button>
         </div>
         <div id="tab-list"></div>
@@ -164,9 +165,10 @@ Developed by technonyte0
     </div>
 
     <div id="menu-overlay">
-      <div class="option" id="devtools-option">Developer Tools</div>
-      <div class="option" id="abc-option">Open in about:blank</div>
-      <div class="option" id="git-option">GitHub</div>
+      <div class="option" id="devtools-option">開発者ツール</div>
+      <div class="option" id="abc-option">about:blank で開く</div>
+      <div class="option" id="git-option">github</div>
+
     </div>
     <script>
       const optionsBtn = document.getElementById("options-btn");
